@@ -1,0 +1,73 @@
+{
+  "$comment": "Curated selection installed from upstream ECC. Edit freely - install.ps1 reads this file.",
+  "upstream": {
+    "repo": "https://github.com/affaan-m/ECC.git",
+    "license": "MIT",
+    "author": "Affaan Mustafa"
+  },
+  "agents": [
+    "architect",
+    "planner",
+    "code-reviewer",
+    "security-reviewer",
+    "tdd-guide",
+    "build-error-resolver",
+    "e2e-runner",
+    "refactor-cleaner",
+    "doc-updater",
+    "react-reviewer",
+    "typescript-reviewer",
+    "react-build-resolver",
+    "a11y-architect",
+    "performance-optimizer",
+    "code-simplifier",
+    "silent-failure-hunter"
+  ],
+  "commands": [
+    "build-fix",
+    "checkpoint",
+    "learn",
+    "refactor-clean",
+    "setup-pm",
+    "test-coverage",
+    "update-codemaps",
+    "update-docs"
+  ],
+  "skills": [
+    "coding-standards",
+    "frontend-patterns",
+    "backend-patterns",
+    "tdd-workflow",
+    "eval-harness",
+    "verification-loop",
+    "error-handling",
+    "context-budget",
+    "config-gc",
+    "token-budget-advisor",
+    "react-patterns",
+    "react-performance",
+    "react-testing",
+    "vite-patterns",
+    "design-system",
+    "motion-ui",
+    "make-interfaces-feel-better",
+    "frontend-a11y"
+  ],
+  "rules": [
+    "common",
+    "typescript",
+    "react",
+    "web"
+  ],
+  "excluded": {
+    "$comment": "Deliberately NOT installed. Reasons are load-bearing - see README.",
+    "hooks/*": "Blocks writing new .md files except README/CLAUDE/AGENTS/CONTRIBUTING, and blocks 'npm run dev' outside tmux (no tmux on Windows).",
+    "commands/code-review": "Shadows the built-in /code-review.",
+    "commands/plan": "Shadows the built-in /plan.",
+    "skills/security-review": "Name-collides with the built-in /security-review skill.",
+    "skills/continuous-learning": "Overlaps a session-capture pipeline if you run one.",
+    "skills/strategic-compact": "Same as above.",
+    "skills/clickhouse-io": "Domain-specific, irrelevant to most setups.",
+    "rules/<other-languages>": "python, go, rust, java, kotlin, swift, dart, vue, angular, php, ruby, csharp, cpp and more exist upstream. Add them here if your stack needs them."
+  }
+}

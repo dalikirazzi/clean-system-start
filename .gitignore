@@ -1,0 +1,15 @@
+# Never commit local Claude Code state - it contains secrets and personal data.
+.claude.json
+**/memory/
+**/sessions/
+**/telemetry/
+**/cache/
+history.jsonl
+settings.json
+settings.json.bak*
+settings.json.backup*
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
